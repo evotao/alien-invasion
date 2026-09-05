@@ -11,6 +11,15 @@ The GIFs and JPEG are unchanged. The original mu-law audio is decoded directly
 into Web Audio buffers at its original sample rate. Sound begins after the first
 interaction, as required by browsers.
 
+## Attribution
+
+**Alien Invasion was created by Ben Librojo and published on JavaGamePlay.com in
+1999.** The original game and assets are copyright (c) 1999 Ben Librojo. All
+rights reserved. This browser restoration retains the original graphics and
+sound effects and credits Ben both in the game header and beneath the playfield.
+
+[Original JavaGamePlay.com game page in the Internet Archive](https://web.archive.org/web/*/http://www.javagameplay.com/ai.html).
+
 ## Controls
 
 | Action | Original Keys |

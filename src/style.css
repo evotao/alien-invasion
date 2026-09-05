@@ -41,20 +41,25 @@ canvas { display: block; width: 100%; height: 100%; outline: none; touch-action:
 .fire:hover, .fire.held { background: #255135; border-color: #78bb8c; }
 .control.armed { border-color: #ef9f55; color: #ffc56c; }
 footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 11px; color: #9b9fa8; min-height: 30px; }
+.credits { margin: 8px 0 0; color: #aeb3bb; text-align: center; font-size: 11px; line-height: 16px; }
+.credits span { display: block; }
+.credits a { color: #cbd1d9; text-underline-offset: 3px; }
+.credits a:hover { color: #fff; }
+.credits a:focus-visible { outline: 2px solid #8edbd2; outline-offset: 3px; }
 #status { min-width: 100px; }
 #best { text-align: right; font-variant-numeric: tabular-nums; min-width: 100px; }
 .volume { display: inline-flex; align-items: center; gap: 8px; }
 .volume svg { width: 15px; height: 15px; }
 input[type="range"] { width: 72px; height: 16px; accent-color: #aab5bd; cursor: pointer; }
-@media (min-width: 640px) {
-  #app { width: min(824px, calc((100svh - 220px) * 400 / 350 + 24px)); min-width: 0; }
+@media (min-width: 621px) {
+  #app { width: min(824px, calc((100svh - 260px) * 400 / 350 + 24px)); min-width: 0; }
   .control { width: 52px; } .fire { width: 64px; }
 }
 @media (max-width: 620px) {
   body { align-items: start; }
   #app { padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom)); }
   header { min-height: 60px; margin-bottom: 8px; gap: 8px; }
-  #stage { width: min(100%, calc((100svh - 256px) * 400 / 350)); margin-inline: auto; }
+  #stage { width: min(100%, calc((100svh - 296px) * 400 / 350)); margin-inline: auto; }
   .brand { gap: 10px; } .brand img { width: 48px; height: 40px; }
   h1 { font-size: 18px; margin-bottom: 5px; } .brand p { font-size: 10px; }
   nav { gap: 0; } nav .icon { width: 32px; height: 36px; } nav .icon svg { width: 17px; height: 17px; }
@@ -77,7 +82,8 @@ input[type="range"] { width: 72px; height: 16px; accent-color: #aab5bd; cursor: 
   header { flex-direction: column; justify-content: center; } .brand { flex-direction: column; text-align: center; } .brand img { width: 75px; height: 56px; }
   h1 { font-size: 18px; } nav { flex-wrap: wrap; justify-content: center; max-width: 90px; }
   #stage { grid-column: 2; grid-row: 1 / 3; width: 100%; }
-  .console { flex-direction: column; border: 0; padding: 0; gap: 12px; }
+  .console { grid-column: 3; grid-row: 1 / 3; flex-direction: column; border: 0; padding: 0; gap: 12px; }
+  .credits { grid-column: 1; grid-row: 2; font-size: 10px; line-height: 14px; margin: 0; }
   .controls { display: grid; grid-template-columns: repeat(2, 44px); gap: 6px; flex: none; }
   .control, .fire { width: 44px; height: 44px; }
   footer { display: none; }

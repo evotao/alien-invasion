@@ -135,7 +135,7 @@ document.addEventListener('fullscreenchange', () => {
 });
 document.addEventListener('keydown', e => {
   if (e.ctrlKey && e.code === 'KeyD') { e.preventDefault(); if (!e.repeat) { diagnostic = !diagnostic; draw(); } return; }
-  if (!ready || e.target instanceof HTMLInputElement || e.ctrlKey || e.metaKey || e.altKey || e.code === 'Tab') return;
+  if (!ready || e.target instanceof HTMLInputElement || e.target instanceof HTMLAnchorElement || e.ctrlKey || e.metaKey || e.altKey || e.code === 'Tab') return;
   const index = keyMap[e.code];
   if (e.code === 'KeyS') { e.preventDefault(); if (!e.repeat) toggleSound(); return; }
   if (e.code === 'Escape' && document.fullscreenElement) return;

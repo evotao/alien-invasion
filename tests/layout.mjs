@@ -14,7 +14,7 @@ try {
   for (const [width, height] of [[280,568],[320,568],[390,844],[600,768],[620,700],[639,768],[640,640],[641,700],[700,550],[768,600],[844,390],[1024,768],[1200,900],[1440,1000],[1920,1080]]) {
     await page.setViewportSize({ width, height });
     const layout = await page.evaluate(() => {
-      const visible = [...document.querySelectorAll('header, h1, .brand, nav, canvas, .console, button, footer')].filter(e => e.getClientRects().length);
+      const visible = [...document.querySelectorAll('header, h1, .brand, nav, canvas, .console, button, footer, .credits, .credits a')].filter(e => e.getClientRects().length);
       const clipped = visible.filter(e => {
         const r=e.getBoundingClientRect(); return r.x < -1 || r.right > innerWidth+1 || r.bottom > innerHeight+1;
       }).map(e => e.id || e.className || e.tagName);
