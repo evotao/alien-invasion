@@ -1,0 +1,17 @@
+{
+  "name": "alien-invasion-restored",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:render": "node tests/render.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "lucide": "^0.468.0",
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0"
+  }
+}

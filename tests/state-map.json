@@ -1,0 +1,19 @@
+{
+  "playerDebris": {"field":"00e4","items":{"x":"q","y":"r","vx":"s","vy":"t"}},
+  "alienDebris": {"field":"00e5","items":{"x":"q","y":"r","vx":"s","vy":"t"}},
+  "aliens": {"field":"00e6","items":{"x":"0165","y":"0166","vx":"0167","vy":"0168","dx":"0169","dy":"016a","frame":"016b","anim":"016c","type":"016d","dead":"016e","exploding":"016f","explosion":"0170","explosionTick":"0171","firing":"0172","lostTrack":"0173","shotX":"0174","shotY":"0175","shotSpeed":"0176"}},
+  "stars": {"field":"00e7","items":{"x":"017c","y":"017d","speed":"017e"}},
+  "bomb": {"field":"00e9","fields":{"active":"017f","bursting":"0180","x":"0181","y":"0182","diameter":"0183","flash":"0184","max":"0185","released":"0186"}},
+  "seeker": {"field":"00ea","fields":{"active":"014e","x":"014f","y":"0150","speed":"0151","target":"0152","unused":"0153"}},
+  "pickup": {"field":"00eb","fields":{"active":"u","x":"v","y":"w"}},
+  "laser": {"field":"00ec","fields":{"x":"j","y":"k","attached":"l","active":"m","length":"n"}},
+  "teleport": {"field":"00ed","fields":{"active":"0177","outgoing":"0178","tick":"0179","frame":"017a","ready":"017b"}},
+  "shots": {"slots":["00ee","00ef","00f0","00f1","00f2"],"items":{"active":"x","x":"y","y":"z"}},
+  "weapons": {"field":"00f3","fields":{"triple":"015e","spread":"015f","laser":"0160","bomb":"0161","seeker":"0162","shield":"0163","unused":"0164"}},
+  "message": {"field":"00f4","fields":{"active":"0154","tick":"0155","duration":"0156","text":"0157","flash":"0158","x":"0159","y":"015a"}},
+  "keys":"010d", "x":"0121", "shieldFlash":"0122", "invincible":"0123", "invincibleFrame":"0124",
+  "dying":"0125", "deathFrame":"0126", "deathTick":"0127", "score":"0128", "paused":"012a",
+  "attract":"012b", "soundOn":"012c", "waitingWave":"012d", "entering":"012e", "entryRemaining":"012f",
+  "level":"0130", "attractTick":"0131", "lives":"0132", "restartDelay":"0133", "killed":"0138", "ceiling":"0139",
+  "tracking":"013a", "depth":"013b", "waveType":"013c", "formation":"013d"
+}

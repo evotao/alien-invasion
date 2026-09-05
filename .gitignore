@@ -1,0 +1,7 @@
+node_modules/
+tools/
+reference/classes/
+artifacts/
+reference/AlienInvasion/
+reference/summary.txt
+.DS_Store

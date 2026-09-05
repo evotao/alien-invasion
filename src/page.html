@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c0d10">
+  <title>Alien Invasion | Ben Librojo</title>
+  <style>/* STYLES */</style>
+</head>
+<body>
+  <main id="app">
+    <header>
+      <div class="brand"><img id="title-art" width="75" height="56" alt=""><div><h1>Alien Invasion</h1><p>Ben Librojo <span aria-hidden="true">/</span> 1999</p></div></div>
+      <nav aria-label="Game settings">
+        <button id="pause" class="icon" aria-label="Pause" title="Pause (P)"><i data-lucide="pause"></i></button>
+        <button id="restart" class="icon" aria-label="New game" title="New game"><i data-lucide="rotate-ccw"></i></button>
+        <button id="sound" class="icon" aria-label="Mute sound" aria-pressed="false" title="Sound (S)"><i data-lucide="volume-2"></i></button>
+        <button id="fullscreen" class="icon" aria-label="Full screen" title="Full screen"><i data-lucide="maximize"></i></button>
+      </nav>
+    </header>
+    <section id="stage" aria-label="Alien Invasion game">
+      <canvas id="game" width="400" height="350" tabindex="0" role="img" aria-label="Alien Invasion playfield"></canvas>
+      <div id="load-state" role="status">Loading...</div>
+      <div id="curtain" hidden><button id="begin" class="command"><i data-lucide="play"></i><span>Start Game</span></button></div>
+    </section>
+    <div class="console">
+      <div class="controls" aria-label="Flight controls">
+        <button class="control icon" data-control="0" aria-label="Move left" title="Move left (Left arrow / J)"><i data-lucide="arrow-left"></i></button>
+        <button class="control icon" data-control="1" aria-label="Move right" title="Move right (Right arrow / L)"><i data-lucide="arrow-right"></i></button>
+        <button class="control icon" data-control="5" aria-label="Shield" title="Shield (Up arrow / I)"><i data-lucide="shield"></i></button>
+        <button class="control icon" data-control="6" aria-label="Teleport" title="Teleport (Down arrow / K)"><i data-lucide="arrow-left-right"></i></button>
+      </div>
+      <div class="controls weapons" aria-label="Weapons">
+        <button class="control icon" data-control="4" aria-label="Laser" title="Laser (A)"><i data-lucide="zap"></i><span class="ammo" id="laser-count">5</span></button>
+        <button class="control icon" data-control="8" aria-label="Heat seeker" title="Heat seeker (W)"><i data-lucide="rocket"></i><span class="ammo" id="seeker-count">5</span></button>
+        <button class="control icon" data-control="7" aria-label="Cluster bomb" title="Cluster bomb / Detonate (D)"><i data-lucide="orbit"></i><span class="ammo" id="bomb-count">5</span></button>
+        <button class="control icon fire" data-control="2" aria-label="Fire" title="Fire (Space)"><i data-lucide="crosshair"></i></button>
+      </div>
+    </div>
+    <footer><span id="status" role="status" aria-live="polite">Ready</span><label class="volume"><i data-lucide="volume-1" aria-hidden="true"></i><input id="volume" type="range" min="0" max="100" value="50" aria-label="Volume" title="Volume"></label><span id="best">Best 0</span></footer>
+  </main>
+  <script>/* SCRIPT */</script>
+</body>
+</html>
